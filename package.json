@@ -1,0 +1,16 @@
+{
+    "name": "sitefeiradeciencias",
+    "version": "1.0.0",
+    "description": "Página para o trabalho do nosso grupo da Feira de Ciências.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next dev"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "next": "^15.5.4",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
+    }
+}
