@@ -1,0 +1,82 @@
+.body {
+    background-image: url("/spongeBobBackground.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.scrollContainer {
+    scroll-behavior: smooth;
+}
+
+.video {
+    border-radius: 15px;
+}
+
+.section {
+    margin: 25px;
+}
+
+.flexRow {
+    display: flex;
+    gap: 25px;
+}
+
+.paragraph {
+    font-size: 25px;
+}
+
+.firstParagraph {
+    max-width: 45%;
+    font-size: 35px;
+    max-height: 90%;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    max-width: 250px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover,
+.mainTitle:hover {
+    transform: scale(1.2);
+}
+
+.header {
+    font-family: sans-serif;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.subTitle {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 25px;
+    font-family: sans-serif;
+}
+
+.menu {
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.table {
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.th,
+.td {
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}

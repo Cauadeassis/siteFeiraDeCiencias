@@ -1,0 +1,131 @@
+.body {
+    background-image: url("/spongeBobBackground.jpg");
+    margin: 0;
+    background: linear-gradient(to top, #0077be 60%, #87cefa 100%);
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.ocean {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #005f8a 60%, transparent 100%);
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    bottom: 0;
+    background-color: darkblue;
+    animation: wave 6s linear infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-child(2) {
+    bottom: 10px;
+    animation: wave 8s linear infinite reverse;
+    opacity: 0.5;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.boat {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 1.5s ease-in-out infinite;
+    z-index: 2;
+}
+
+.hull {
+    width: 120px;
+    height: 30px;
+    background: #8B0000;
+    border-radius: 0 0 60px 60px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 10px #000;
+}
+
+.mast {
+    width: 6px;
+    height: 40px;
+    background: #333;
+    position: absolute;
+    bottom: 30px;
+    left: 57px;
+}
+
+.sail {
+    width: 40px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.mainTitle {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.25em;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 3;
+}
+
+.badassLabel {
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg);
+    background: gold;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 5px #333;
+    animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(5deg);
+    }
+}
