@@ -1,38 +1,40 @@
 import React from "react";
-import "styles/mainPage.css";
+import styles from "../styles/mainPage.module.css";
+import Link from "next/link";
 
 export default function MainPage() {
     return (
-        <div>
-            <header>
-                <h1>Título</h1>
-                <menu>
-                    <a href="#secao1">
+        <div className={styles.body}>
+            <header className={styles.header}>
+                <h1 className={styles.mainTitle}>Título</h1>
+
+                <menu className={styles.menu}>
+                    <a className={styles.link} href="#secao1">
                         <h2>O que é densidade?</h2>
                     </a>
-                    <a href="#secao2">
+                    <a className={styles.link} href="#secao2">
                         <h2>Exemplos de experimentos</h2>
                     </a>
-                    <a href="#secao3">
+                    <a className={styles.link} href="#secao3">
                         <h2>Membros do grupo</h2>
                     </a>
-                    <a href="secondaryPage.html">
+                    <Link className={styles.link} href="/secondaryPage">
                         <h2>Animação do barco do amor</h2>
-                    </a>
+                    </Link>
                 </menu>
             </header>
 
             <main>
-                <section id="secao1">
-                    <h3>🔬 O que é Densidade?</h3>
-                    <div id="piru1">
-                        <p id="firstParagraph">
-                            Densidade é a quantidade de massa em um certo volume de um material.
-                            A fórmula usada é: <br />
+                <section id="secao1" className={styles.section}>
+                    <h3 className={styles.subTitle}>🔬 O que é Densidade?</h3>
+                    <div className={styles.flexRow}>
+                        <p className={styles.firstParagraph}>
+                            Densidade é a quantidade de massa em um certo volume de um
+                            material. A fórmula usada é: <br />
                             <strong>D = m / V (densidade = massa ÷ volume).</strong>
                         </p>
                         <iframe
-                            id="video"
+                            className={styles.video}
                             width="560"
                             height="315"
                             src="https://www.youtube.com/embed/24S0-Q9DYtg?si=sFKsifrE8gKnIlg9"
@@ -44,54 +46,56 @@ export default function MainPage() {
                         ></iframe>
                     </div>
                 </section>
-                <section>
-                    <h3>🌊 Afundar ou Boiar?</h3>
-                    <p>
+
+                <section className={styles.section}>
+                    <h3 className={styles.subTitle}>🌊 Afundar ou Boiar?</h3>
+                    <p className={styles.paragraph}>
                         - Objetos com densidade menor que a da água boiam. <br />
                         - Objetos com densidade maior que a da água afundam. <br />
                         A densidade da água é 1 g/cm³.
                     </p>
                 </section>
-                <section id="secao2">
-                    <h3>🧪 Exemplos Práticos</h3>
-                    <table>
+
+                <section id="secao2" className={styles.section}>
+                    <h3 className={styles.subTitle}>🧪 Exemplos Práticos</h3>
+                    <table className={styles.table}>
                         <thead>
                             <tr>
-                                <th>Objeto</th>
-                                <th>Resultado</th>
-                                <th>Explicação</th>
+                                <th className={styles.th}>Objeto</th>
+                                <th className={styles.th}>Resultado</th>
+                                <th className={styles.th}>Explicação</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Bola de isopor</td>
-                                <td>Boiou</td>
-                                <td>Tem baixa densidade</td>
+                                <td className={styles.td}>Bola de isopor</td>
+                                <td className={styles.td}>Boiou</td>
+                                <td className={styles.td}>Tem baixa densidade</td>
                             </tr>
                             <tr>
-                                <td>Prego de ferro</td>
-                                <td>Afundou</td>
-                                <td>Densidade maior que a da água</td>
+                                <td className={styles.td}>Prego de ferro</td>
+                                <td className={styles.td}>Afundou</td>
+                                <td className={styles.td}>Densidade maior que a da água</td>
                             </tr>
                             <tr>
-                                <td>Madeira</td>
-                                <td>Boiou</td>
-                                <td>Densidade menor que a da água</td>
+                                <td className={styles.td}>Madeira</td>
+                                <td className={styles.td}>Boiou</td>
+                                <td className={styles.td}>Densidade menor que a da água</td>
                             </tr>
                             <tr>
-                                <td>Sabonete</td>
-                                <td>Varia</td>
-                                <td>Depende da composição</td>
+                                <td className={styles.td}>Sabonete</td>
+                                <td className={styles.td}>Varia</td>
+                                <td className={styles.td}>Depende da composição</td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
             </main>
 
-            <footer id="secao3">
+            <footer id="secao3" className={styles.section}>
                 <p>Feira de Ciências • IFerno • Outubro de 2025</p>
                 {[...Array(5)].map((_, i) => (
-                    <a key={i} href="instagram://user?username=sk8_cauaa">
+                    <a key={i} className={styles.link} href="instagram://user?username=sk8_cauaa">
                         <h2>Cauã</h2>
                     </a>
                 ))}
