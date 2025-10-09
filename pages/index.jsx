@@ -12,7 +12,7 @@ export default function MainPage() {
             <div className={styles.body}>
                 <header className={styles.header}>
                     <div className={styles.container} id="menu">
-                        <h1 className={styles.mainTitle}>Feira de Ciências</h1>
+
                         <nav className={styles.nav}>
                             <ul className={styles.ul}>
                                 <li className={styles.li}><a href="#sobre" className={styles.a}>Sobre</a></li>
