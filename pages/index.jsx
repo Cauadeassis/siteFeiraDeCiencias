@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "../styles/mainPage.module.css";
 import Link from "next/link";
+import Head from 'next/head'
 
+<Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feira de Ciências</title>
+</Head>
 export default function MainPage() {
     return (
         <div className={styles.body}>
