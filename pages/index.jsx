@@ -98,7 +98,7 @@ export default function MainPage() {
                                 Cauã de Assis Dias
                             </a>{" "}
                             e{" "}
-                            <a href="https://www.instagram.com/vttr_jv?utm_source=qr&igsh=MXNrcWc4YWdkYmF5bg==">
+                            <a href="troll">
                                 João Vitor Scoparo Schettino
                             </a>
                         </p>
