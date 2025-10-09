@@ -1,131 +1,126 @@
 .body {
-    background-image: url("/spongeBobBackground.jpg");
-    margin: 0;
-    background: linear-gradient(to top, #0077be 60%, #87cefa 100%);
-    overflow: hidden;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(to bottom, #326880, #339cbe, #6babc7);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-.ocean {
+.container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 30px 40px;
+    text-align: center;
+    color: #ecf0f1;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: all 0.3s ease;
+}
+
+.texto-box .h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.texto-box .p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #dcdde1;
+}
+
+.mar {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to top, #005f8a 60%, transparent 100%);
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: linear-gradient(to top, #064b79 20%, transparent 100%);
 }
 
-.wave {
+.barco {
     position: absolute;
-    width: 200%;
-    height: 100px;
-    bottom: 0;
-    background-color: darkblue;
-    animation: wave 6s linear infinite;
-    opacity: 0.8;
-}
-
-.wave:nth-child(2) {
-    bottom: 10px;
-    animation: wave 8s linear infinite reverse;
-    opacity: 0.5;
-}
-
-@keyframes wave {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.boat {
-    position: absolute;
-    width: 120px;
-    height: 60px;
-    bottom: 100px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    animation: float 1.5s ease-in-out infinite;
-    z-index: 2;
-}
-
-.hull {
-    width: 120px;
-    height: 30px;
-    background: #8B0000;
-    border-radius: 0 0 60px 60px;
-    position: absolute;
-    bottom: 0;
-    box-shadow: 0 0 10px #000;
-}
-
-.mast {
-    width: 6px;
+    width: 50%;
     height: 40px;
-    background: #333;
-    position: absolute;
-    bottom: 30px;
-    left: 57px;
+    background: #b41616;
+    border-radius: 0 0 20px 20px;
+    animation: flutuar 3s ease-in-out infinite;
 }
 
-.sail {
-    width: 40px;
-    height: 30px;
+.vela {
+    position: absolute;
+    bottom: 40px;
+    left: 80%;
+    width: 4px;
+    height: 40px;
     background: #fff;
+    transform: translateX(-50%);
+}
+
+.vela::before {
+    content: '';
     position: absolute;
-    bottom: 30px;
-    left: 60px;
+    left: 4px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.8);
     clip-path: polygon(0 0, 100% 50%, 0 100%);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes float {
+@keyframes flutuar {
 
     0%,
     100% {
-        transform: translateX(-50%) translateY(0);
+        transform: translate(-50%, 0);
     }
 
     50% {
-        transform: translateX(-50%) translateY(-10px);
+        transform: translate(-50%, -10px);
     }
 }
 
-.mainTitle {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.25em;
-    color: white;
-    text-shadow: 2px 2px 4px #000;
-    z-index: 3;
-}
-
-.badassLabel {
-    position: absolute;
-    bottom: 180px;
-    left: 50%;
-    transform: translateX(-50%) rotate(-5deg);
-    background: gold;
-    color: black;
-    padding: 5px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.2em;
-    box-shadow: 2px 2px 5px #333;
-    animation: wiggle 1s infinite;
-}
-
-@keyframes wiggle {
-
-    0%,
-    100% {
-        transform: translateX(-50%) rotate(-5deg);
+@media (max-width: 600px) {
+    .texto-box {
+        padding: 20px;
     }
 
-    50% {
-        transform: translateX(-50%) rotate(5deg);
+    .texto-box .h2 {
+        font-size: 1.5rem;
+    }
+
+    .texto-box .p {
+        font-size: 1rem;
+    }
+
+    .barco {
+        width: 70px;
+        height: 40px;
+    }
+
+    .vela {
+        height: 30px;
+    }
+
+    .vela::before {
+        width: 20px;
+        height: 20px;
     }
 }
