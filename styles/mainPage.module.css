@@ -3,10 +3,11 @@
     background: #f5f9ff;
     color: #333;
     line-height: 1.6;
+    width: 100%;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 }
