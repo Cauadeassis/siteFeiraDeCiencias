@@ -6,36 +6,56 @@
     width: 100%;
 }
 
-.container {
-    width: 90%;
+.nav {
+    width: 100%;
+    height: 100%;
     margin: auto;
-}
-
-.header {
-    background: #1e3a8a;
-    color: white;
-    padding: 10px 0;
-}
-
-.header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.header .nav .ul {
+.header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .ul {
     display: flex;
     list-style: none;
+    width: 100%;
+    height: 100%;
+    gap: 0;
 }
 
-.header .nav .ul .li {
-    margin-left: 20px;
+.nav .li {
+    padding: 0 20px;
+    flex: 1;
 }
 
-.header .nav .ul .li .a {
+.nav .a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.nav .a:hover {
+    background-color: #12214b;
+    transform: scale(1.1);
+    text-shadow: 0 0 4px white;
+    transition: 0.5s;
 }
 
 .hero {
@@ -169,13 +189,91 @@
     border-radius: 10px;
 }
 
-.a {
-    color: #9cadb8;
-    text-decoration: none;
-    transition: 0.5s;
+@media screen and (max-width: 768px) {
+    .nav .li {
+        padding: 10px 0;
+        /* Ajustar o padding dos itens da navegação */
+        flex: none;
+    }
+
+    .header {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero .h2 {
+        font-size: 2rem;
+    }
+
+    .hero .p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .sobre .p {
+        font-size: 1rem;
+    }
+
+    .galeria .h2 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+        /* Reduzir o tamanho do card */
+        margin: 0 auto;
+        /* Centralizar o card */
+    }
+
+    #contato {
+        padding: 20px 10px;
+    }
+
+    #video {
+        flex-direction: column;
+    }
 }
 
-.a:hover {
-    background-color: #12214b;
-    border-radius: 5px;
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .hero .h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero .p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .sobre .p {
+        font-size: 0.9rem;
+    }
+
+    .cards {
+        gap: 5px;
+    }
+
+    .card {
+        width: 100%;
+    }
 }

@@ -11,17 +11,22 @@ export default function MainPage() {
             </Head>
             <div className={styles.body}>
                 <header className={styles.header}>
-                    <div className={styles.container} id="menu">
-
-                        <nav className={styles.nav}>
-                            <ul className={styles.ul}>
-                                <li className={styles.li}><a href="#sobre" className={styles.a}>Sobre</a></li>
-                                <li className={styles.li}><a href="#experimentos" className={styles.a}>Experimentos</a></li>
-                                <li className={styles.li}><a href="#" className={styles.a}>Quiz</a></li>
-                                <li className={styles.li}><a href="secondaryPage" className={styles.a}>Animação</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <nav className={styles.nav}>
+                        <ul className={styles.ul}>
+                            <li className={styles.li}>
+                                <a href="#sobre" className={styles.a}>Sobre</a>
+                            </li>
+                            <li className={styles.li}>
+                                <a href="#experimentos" className={styles.a}>Experimentos</a>
+                            </li>
+                            <li className={styles.li}>
+                                <a href="#" className={styles.a}>Quiz</a>
+                            </li>
+                            <li className={styles.li}>
+                                <a href="secondaryPage" className={styles.a}>Animação</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
 
                 <section className={styles.hero}>
