@@ -20,7 +20,7 @@ export default function MainPage() {
                                 <a href="#experimentos" className={styles.a}>Experimentos</a>
                             </li>
                             <li className={styles.li}>
-                                <a href="#" className={styles.a}>Quiz</a>
+                                <a href="https://create.kahoot.it/share/densidade/e0721a7f-3bb2-4453-abc9-72191adadda2" className={styles.a} target="_blank">Quiz</a>
                             </li>
                             <li className={styles.li}>
                                 <a href="secondaryPage" className={styles.a}>Animação</a>
