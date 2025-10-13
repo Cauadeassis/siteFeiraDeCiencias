@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 0;
-    width: 130%;
+    width: 100%;
 }
 
 .link {
@@ -185,6 +185,11 @@
         font-size: 20px;
     }
 
+    .link {
+        font-size: 1.3rem;
+        padding: 5px 8px;
+    }
+
     .hero {
         padding: 60px 20px;
     }
@@ -238,6 +243,10 @@
     .header {
         font-size: 18px;
         padding: 10px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
     }
 
     .hero .secondaryTitle {
