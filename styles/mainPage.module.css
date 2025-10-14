@@ -20,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0;
     width: 100%;
 }
 
@@ -37,6 +36,12 @@
     background-color: #12214b;
     transform: scale(1.1);
     text-shadow: 0 0 3px white;
+}
+
+.secondaryTitle {
+    text-align: center;
+    color: #1e3a8a;
+    margin: 15px;
 }
 
 .hero {
@@ -71,43 +76,46 @@
     background: #e0e7ff;
 }
 
-.sobre {
+.introduction {
     padding: 60px 20px;
     background: #fff;
 }
 
-.sobre .secondaryTitle {
-    text-align: center;
+.introduction .secondaryTitle {
     margin-bottom: 20px;
-    color: #1e3a8a;
 }
 
-.sobre .description {
+.introduction .description {
     max-width: 800px;
     margin: auto;
     font-size: 1.1rem;
     text-align: center;
 }
 
-.galeria {
+.introduction .strong {
+    border: #1e3a8a solid 3px;
+    color: #1e3a8a;
+    margin: 5px;
+    padding: 5px;
+}
+
+.galery {
     padding: 60px 20px;
     background: #e0f2fe;
 }
 
-.galeria .secondaryTitle {
-    text-align: center;
+.galery .secondaryTitle {
     margin-bottom: 40px;
-    color: #1e3a8a;
 }
 
-.cardsContainer {
+.galery .cardsContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.card {
+.cardsContainer .card {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -137,11 +145,20 @@
 
 .videoSection {
     margin-top: 25px;
+    text-align: center;
 }
 
-#contato {
-    background: #1e3a8a;
-    color: white;
+.youtubeVideo {
+    padding: 20px;
+    border-radius: 50px;
+    height: 500px;
+    width: 70%;
+    border: none;
+}
+
+.contactSection {
+    background: #e0f2fe;
+    color: black;
     text-align: center;
     padding: 30px 20px;
     margin-top: 40px;
@@ -149,33 +166,6 @@
 
 #int {
     padding-top: 20px;
-}
-
-.secondaryTitle {
-    text-align: center;
-    color: #1e3a8a;
-    margin: 15px;
-}
-
-#video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.strong {
-    border: #1e3a8a solid 3px;
-    color: #1e3a8a;
-    margin: 5px;
-    padding: 5px;
-}
-
-.iframe {
-    padding: 20px;
-    border-radius: 50px;
-    height: 500px;
-    width: 1000px;
-    margin: 25px 250px 0 250px;
 }
 
 @media screen and (max-width: 768px) {
@@ -206,11 +196,11 @@
         padding: 10px 20px;
     }
 
-    .sobre .description {
+    .introduction .description {
         font-size: 1rem;
     }
 
-    .galeria .secondaryTitle {
+    .galery .secondaryTitle {
         font-size: 1.5rem;
     }
 
@@ -228,11 +218,7 @@
         padding: 20px 10px;
     }
 
-    #video {
-        flex-direction: column;
-    }
-
-    .iframe {
+    .youtubeVideo {
         width: 90%;
         height: 300px;
         margin: 15px 30px 0 30px;
@@ -262,7 +248,7 @@
         padding: 10px 15px;
     }
 
-    .sobre .description {
+    .introduction .description {
         font-size: 0.9rem;
     }
 
