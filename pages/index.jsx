@@ -24,7 +24,7 @@ export default function MainPage() {
                     </nav>
                 </header>
                 <main>
-                    <section className={styles.hero}>
+                    <section className={`${styles.hero} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>Densidade: A Ciência por Trás das Substâncias</h2>
                         <p className={styles.description}>
                             Descubra como a densidade afeta o nosso dia a dia com experimentos incríveis e interativos.
@@ -32,7 +32,7 @@ export default function MainPage() {
                         <a href="#galery" className={styles.linkButton}>Ver Experimentos</a>
                     </section>
 
-                    <section id="introduction" className={styles.introduction}>
+                    <section id="introduction" className={`${styles.introduction} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>O que é Densidade?</h2>
                         <p className={styles.description}>
                             Densidade é a razão entre a massa de um material e o volume que ele ocupa, sendo calculada pela fórmula{" "}
@@ -45,7 +45,19 @@ export default function MainPage() {
                             A densidade é uma propriedade fundamental da matéria que influencia diretamente como os objetos interagem entre si no ambiente. Neste projeto, exploramos o conceito de densidade de forma prática e visual, por meio de experimentos simples e envolventes. Nosso objetivo é demonstrar como a densidade determina se um objeto afunda ou flutua, como líquidos de diferentes densidades se separam em camadas, e como pequenas alterações em um sistema podem modificar completamente o seu comportamento.
                         </p>
                     </section>
-                    <section id="galery" className={styles.galery}>
+                    <section id="explanation" className={`${styles.explanation} ${styles.section}`}>
+                        <h2 className={styles.secondaryTitle}>Força de Empuxo</h2>
+                        <p className={styles.description}>
+                            O empuxo é uma força que os líquidos exercem nos corpos mergulhados neles.
+                            Essa força empurra o objeto para cima e é o que faz um barco flutuar, mesmo sendo pesado!
+                        </p>
+                        <p className={styles.description}>
+                            Se o empuxo for maior que o peso do objeto, ele flutua.
+                            Se for menor, ele afunda.
+                        </p>
+                        <img className={styles.empuxoImg} src="/exemploDeEmpuxo.png" alt="exemplo da força de empuxo" />
+                    </section>
+                    <section id="galery" className={`${styles.galery} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>Experimentos em Destaque</h2>
                         <div className={styles.cardsContainer}>
                             <div className={styles.card}>
@@ -62,7 +74,7 @@ export default function MainPage() {
                             </div>
                         </div>
                     </section>
-                    <section id="videoSection" className={styles.videoSection}>
+                    <section id="videoSection" className={`${styles.videoSection} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>Vídeo Explicativo</h2>
                         <iframe className={styles.youtubeVideo}
                             src="https://www.youtube.com/embed/24S0-Q9DYtg?si=YGMhsnxESTncLkMf"

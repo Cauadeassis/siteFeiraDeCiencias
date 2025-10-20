@@ -38,10 +38,19 @@
     text-shadow: 0 0 3px white;
 }
 
+.mainTitle {
+    text-align: center;
+    color: #1e3a8a;
+}
+
 .secondaryTitle {
     text-align: center;
     color: #1e3a8a;
-    margin: 15px;
+    padding: 15px;
+}
+
+.section {
+    padding: 0 0 25px 0;
 }
 
 .hero {
@@ -97,6 +106,28 @@
     color: #1e3a8a;
     margin: 5px;
     padding: 5px;
+}
+
+.explanation {
+    background-color: #FAF6F5;
+    justify-content: center;
+}
+
+.explanation .secondaryTitle {
+    color: #1e3a8a;
+}
+
+.explanation .description {
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.explanation .empuxoImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 .galery {
