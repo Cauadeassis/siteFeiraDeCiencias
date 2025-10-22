@@ -25,7 +25,7 @@ export default function MainPage() {
                 </header>
                 <main>
                     <section className={`${styles.hero} ${styles.section}`}>
-                        <h2 className={styles.secondaryTitle}>Densidade: A Ciência por Trás das Substâncias</h2>
+                        <h1 className={styles.mainTitle}>Densidade: A Ciência por Trás das Substâncias</h1>
                         <p className={styles.description}>
                             Descubra como a densidade afeta o nosso dia a dia com experimentos incríveis e interativos.
                         </p>
@@ -96,7 +96,10 @@ export default function MainPage() {
                             Cauã de Assis Dias
                         </a>{" "}
                         e{" "}
-                        <a href="troll" className={styles.instagramLink}>
+                        <a href="https://www.instagram.com/vttr_jv/"
+                            className={styles.instagramLink}
+                            target="_blank"
+                            rel="noopener noreferrer">
                             João Vitor Scoparo Schettino
                         </a>
                     </p>
