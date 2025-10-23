@@ -12,7 +12,7 @@ export default function MainPage() {
             <div className={styles.body}>
                 <header className={styles.header}>
                     <nav className={styles.nav}>
-                        <a href="#introduction" className={styles.link}>Sobre</a>
+                        <a href="#densityExplanation" className={styles.link}>Sobre</a>
                         <a href="#galery" className={styles.link}>Experimentos</a>
                         <a href="https://create.kahoot.it/share/densidade/e0721a7f-3bb2-4453-abc9-72191adadda2"
                             className={styles.link}
@@ -32,20 +32,15 @@ export default function MainPage() {
                         <a href="#galery" className={styles.linkButton}>Ver Experimentos</a>
                     </section>
 
-                    <section id="introduction" className={`${styles.introduction} ${styles.section}`}>
+                    <section id="densityExplanation" className={`${styles.densityExplanation} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>O que é Densidade?</h2>
                         <p className={styles.description}>
                             Densidade é a razão entre a massa de um material e o volume que ele ocupa, sendo calculada pela fórmula{" "}
                             <strong className={styles.strong}>d=m/v</strong>. Ela determina se um objeto flutua ou afunda,
                             e tem aplicações desde a engenharia até a culinária. Na nossa feira, você vai ver isso na prática!
                         </p>
-
-                        <h2 className={styles.secondaryTitle}>Introdução ao Projeto</h2>
-                        <p className={styles.description}>
-                            A densidade é uma propriedade fundamental da matéria que influencia diretamente como os objetos interagem entre si no ambiente. Neste projeto, exploramos o conceito de densidade de forma prática e visual, por meio de experimentos simples e envolventes. Nosso objetivo é demonstrar como a densidade determina se um objeto afunda ou flutua, como líquidos de diferentes densidades se separam em camadas, e como pequenas alterações em um sistema podem modificar completamente o seu comportamento.
-                        </p>
                     </section>
-                    <section id="explanation" className={`${styles.explanation} ${styles.section}`}>
+                    <section id="empuxoExplanation" className={`${styles.empuxoExplanation} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>Força de Empuxo</h2>
                         <p className={styles.description}>
                             O empuxo é uma força que os líquidos exercem nos corpos mergulhados neles.
@@ -56,6 +51,16 @@ export default function MainPage() {
                             Se for menor, ele afunda.
                         </p>
                         <img className={styles.empuxoImg} src="/exemploDeEmpuxo.png" alt="exemplo da força de empuxo" />
+                    </section>
+                    <section id="superficialTensionExplanation" className={`${styles.superficialTensionExplanation} ${styles.section}`}>
+                        <h2 className={styles.secondaryTitle}>Tensão Superficial</h2>
+                        <p className={styles.description}>
+                            A tensão artificial é uma força que existe na superfície dos líquidos que faz eles terem uma pele elástica.
+                        </p>
+                        <p className={styles.description}>
+                            Isso acontece porque as moléculas da superfície são puxadas apenas para dentro do líquido, já que não há moléculas acima delas.
+                        </p>
+                        <img className={styles.superficialTensionImg} src="/exemploDeTensaoArtificial.png" alt="exemplo da tensão superficial" />
                     </section>
                     <section id="galery" className={`${styles.galery} ${styles.section}`}>
                         <h2 className={styles.secondaryTitle}>Experimentos em Destaque</h2>

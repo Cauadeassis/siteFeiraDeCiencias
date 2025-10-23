@@ -85,48 +85,64 @@
     background: #e0e7ff;
 }
 
-.introduction {
+.densityExplanation {
     padding: 60px 20px;
     background: #fff;
 }
 
-.introduction .secondaryTitle {
+.densityExplanation .secondaryTitle {
     margin-bottom: 20px;
 }
 
-.introduction .description {
-    max-width: 800px;
+.densityExplanation .description {
+    max-width: 90%;
     margin: auto;
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 2rem;
+    text-align: left;
 }
 
-.introduction .strong {
+.densityExplanation .strong {
     border: #1e3a8a solid 3px;
     color: #1e3a8a;
     margin: 5px;
     padding: 5px;
 }
 
-.explanation {
+.empuxoExplanation {
     background-color: #FAF6F5;
     justify-content: center;
 }
 
-.explanation .secondaryTitle {
+.empuxoExplanation .secondaryTitle {
     color: #1e3a8a;
 }
 
-.explanation .description {
+.empuxoExplanation .description {
     max-width: 50%;
     margin: auto;
     font-size: 1.1rem;
     text-align: left;
 }
 
-.explanation .empuxoImg {
+.empuxoExplanation .empuxoImg {
     display: block;
     margin: 0 auto;
+    margin-top: 15px;
+    max-width: 50%;
+}
+
+.superficialTensionExplanation .description {
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.superficialTensionExplanation .superficialTensionImg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
     max-width: 50%;
 }
 
@@ -228,7 +244,7 @@
         padding: 10px 20px;
     }
 
-    .introduction .description {
+    .densityExplanation .description {
         font-size: 1rem;
     }
 
@@ -280,7 +296,7 @@
         padding: 10px 15px;
     }
 
-    .introduction .description {
+    .densityExplanation .description {
         font-size: 0.9rem;
     }
 
