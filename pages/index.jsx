@@ -61,16 +61,16 @@ export default function MainPage() {
                         <h2 className={styles.secondaryTitle}>Experimentos em Destaque</h2>
                         <div className={styles.cardsContainer}>
                             <div className={styles.card}>
-                                <h3 className={styles.title}>Camadas de Líquidos</h3>
-                                <p className={styles.description}>Veja como diferentes líquidos formam camadas por causa da densidade.</p>
+                                <h3 className={styles.title}>Óleo e biosurfactante</h3>
+                                <p className={styles.description}>Veja um experimento onde o óleo se mistura com a água de forma  uniforme, usando biosurfactante.</p>
                             </div>
                             <div className={styles.card}>
-                                <h3 className={styles.title}>Ovo Flutuante</h3>
-                                <p className={styles.description}>Descubra como adicionar sal na água pode fazer um ovo flutuar.</p>
+                                <h3 className={styles.title}>Orégano e detergente</h3>
+                                <p className={styles.description}>Descubra como e por que o detergente limpa gorduras, usando apenas orégano, detergente e água.</p>
                             </div>
                             <div className={styles.card}>
-                                <h3 className={styles.title}>Densidade dos Gases</h3>
-                                <p className={styles.description}>Experimentos que mostram como gases também têm densidade!</p>
+                                <h3 className={styles.title}>Agulha magnetizada</h3>
+                                <p className={styles.description}>Colocamos uma folha sobre a água e, em cima dela, a agulha. Mesmo sendo de metal, a agulha flutuará.</p>
                             </div>
                         </div>
                     </section>

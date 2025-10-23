@@ -168,6 +168,7 @@
 .card .title {
     padding: 15px 20px 0;
     color: #1e3a8a;
+    text-align: center;
 }
 
 .card .description {
